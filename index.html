@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HARSHAl the goonboy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="agent-panel" aria-label="Useless AI agent">
+        <div class="scorebar">
+          <div>
+            <span class="label">RCB belief</span>
+            <strong id="belief">99%</strong>
+          </div>
+          <div>
+            <span class="label">Usefulness</span>
+            <strong id="usefulness">0%</strong>
+          </div>
+          <div>
+            <span class="label">Game skill</span>
+            <strong id="skill">-4</strong>
+          </div>
+          <div>
+            <span class="label">Aura debt</span>
+            <strong id="aura">12</strong>
+          </div>
+        </div>
+
+        <div class="agent-stage">
+          <div class="halo"></div>
+          <div class="agent-card" id="agentCard" role="button" tabindex="0" aria-label="Interact with HARSHAl card">
+            <div class="cap">RCB</div>
+            <div class="portrait-wrap">
+              <img
+                class="bot-photo"
+                src="assets/harshal-the-goonboy.jpeg"
+                alt="HARSHAl the goonboy"
+              />
+              <div class="face-badge" aria-hidden="true">
+                <span class="eye" id="leftEye">x</span>
+                <span class="mouth" id="mouth">o</span>
+                <span class="eye" id="rightEye">x</span>
+              </div>
+            </div>
+            <div class="jersey">18</div>
+          </div>
+        </div>
+
+        <div class="flappy-game" id="flappyGame" aria-label="Flappy HARSHAl game">
+          <div class="flappy-head">
+            <div>
+              <span class="label">Flappy HARSHAl</span>
+              <strong id="flappyScore">Trophies 0/5</strong>
+            </div>
+            <div class="flappy-controls">
+              <button type="button" id="flappyMusic">Music on</button>
+              <button type="button" id="flappyRestart">Restart</button>
+              <button type="button" id="flappyJump">Jump</button>
+            </div>
+          </div>
+          <canvas id="flappyCanvas" width="520" height="280"></canvas>
+          <p id="flappyMessage">Tap Jump to start. Collect 5 trophies. No desktop required.</p>
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow">Artificial unintelligence</p>
+          <h1>HARSHAl the goonboy</h1>
+          <p id="status">Bro is buffering emotionally after another toss decision.</p>
+          <div class="mood" aria-label="Bot mood meter">
+            <span>Mood</span>
+            <div class="meter">
+              <div id="moodFill"></div>
+            </div>
+            <strong id="moodText">delulu</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="console" aria-label="Chat with HARSHAl the goonboy">
+        <div class="console-scroll">
+          <div class="transcript" id="transcript">
+            <div class="bubble agent">
+              <span>HARSHAl</span>
+              I can help with absolutely nothing. Ee sala cup namde, but also I forgot what a cup is.
+            </div>
+          </div>
+
+          <div class="chips" aria-label="Quick prompts">
+            <button type="button" data-prompt="Give me game advice">Game advice</button>
+            <button type="button" data-prompt="Do my homework">Homework</button>
+            <button type="button" data-prompt="Make a strategy">Strategy</button>
+            <button type="button" data-prompt="Say something motivational">Motivation</button>
+          </div>
+
+          <div class="mini-game" aria-label="Mini game">
+            <div>
+              <span class="label">Impossible mini-game</span>
+              <strong id="gamePrompt">Click the winning button.</strong>
+            </div>
+            <div class="game-buttons">
+              <button type="button" data-choice="A">A</button>
+              <button type="button" data-choice="B">B</button>
+              <button type="button" data-choice="C">C</button>
+            </div>
+            <p id="gameResult">HARSHAl has never won this. Not even once.</p>
+          </div>
+        </div>
+
+        <div class="console-controls">
+          <form class="composer" id="composer">
+            <textarea
+              id="prompt"
+              autocomplete="off"
+              maxlength="160"
+              rows="2"
+              placeholder="Type useless request... long rant scrolls here"
+              aria-label="Message HARSHAl the goonboy"></textarea>
+            <button type="submit">Send</button>
+          </form>
+
+          <div class="actions" aria-label="Useless tools">
+            <button type="button" data-action="panic" class="panic-button">Panic mode</button>
+            <button type="button" data-action="flappy">Flappy HARSHAl</button>
+            <button type="button" data-action="game">Play game</button>
+            <button type="button" data-action="rcb">Predict RCB</button>
+            <button type="button" data-action="think">Think hard</button>
+            <button type="button" data-action="fix">Fix problem</button>
+            <button type="button" data-action="reset">Reset delusion</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
